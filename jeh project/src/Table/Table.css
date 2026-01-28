@@ -1,0 +1,50 @@
+.container {
+  width: 260px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1e40af;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+  background-color: #2563eb;
+  color: white;
+  padding: 6px;
+  text-align: left;
+}
+
+.table td {
+  padding: 6px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table tr:hover {
+  background-color: #f1f5f9;
+}
