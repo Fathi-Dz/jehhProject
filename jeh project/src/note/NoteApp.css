@@ -1,0 +1,150 @@
+/* ===== THEME ===== */
+:root {
+  --bg: #0d0f14;
+  --card: #161a23;
+  --line: #242938;
+  --text: #e7e9ef;
+  --muted: #8b90a0;
+  --accent: #6cf2c2;
+  --danger: #ff6b6b;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #151827, var(--bg));
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--text);
+}
+
+/* ===== APP WRAPPER ===== */
+.app {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* ===== FORM ===== */
+.form {
+  display: grid;
+  grid-template-columns: 2fr 1.3fr 1fr auto;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.form input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  padding: 10px 6px;
+  color: var(--text);
+  outline: none;
+  transition: 0.25s;
+}
+
+.form input::placeholder {
+  color: var(--muted);
+}
+
+.form input:focus {
+  border-color: var(--accent);
+}
+
+.form button {
+  background: var(--accent);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.form button:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== LIST ===== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ===== NOTE CARD ===== */
+.note {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background: linear-gradient(180deg, #181c29, var(--card));
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+
+  transition: 0.3s;
+  animation: fadeIn 0.35s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.note:hover {
+  transform: translateY(-3px);
+  border-color: #30364a;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+/* ===== CHECKBOX ===== */
+.note input[type="checkbox"] {
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+/* ===== NOTE CONTENT ===== */
+.note-content {
+  flex: 1;
+}
+
+.note-content p {
+  margin: 2px 0;
+}
+
+.meta {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ===== ACTION BUTTON ===== */
+.note-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.note-actions button {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.note-actions button:hover {
+  color: var(--text);
+}
+
+/* ===== DONE STYLE ===== */
+.note.done {
+  opacity: 0.4;
+  transform: scale(0.98);
+}

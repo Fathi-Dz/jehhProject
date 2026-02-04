@@ -1,6 +1,7 @@
 import Layout from "./Layout/Layout";
 import AlertButton from "./button/AlertButton";
 import Table from "./Table/Table";
+import NoteApp from "./note/NoteApp";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <p>Ini konten utama aplikasi gue.</p> */}
       <AlertButton text="Alert Button" message="Ini pesan alert" />
         <Table />
+        <NoteApp />
     </Layout>
   );
 }
