@@ -1,0 +1,94 @@
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 10px 12px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 14px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #020617;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background: #020617;
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: left;
+}
+
+th {
+  color: #94a3b8;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  border-top: 1px solid #1e293b;
+  transition: background 0.2s;
+}
+
+tbody tr:hover {
+  background: #020617;
+}
+
+/* ACTION BUTTONS */
+td button {
+  margin-right: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+td button:last-child {
+  background: #ef4444;
+}
+
+td button:last-child:hover {
+  background: #dc2626;
+}
